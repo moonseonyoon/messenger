@@ -1,0 +1,13 @@
+1. use an anchor tag 
+    a. link to the same page, but pass in a GET parameter
+        for the limit
+    b. on the page, check if the GET parameter exists.
+        1. If it does, use it and then increment it
+        2. If it doesn't use 10
+    c. The a tag href = "myindexpage.php?limit=<?= $limit ?>" 
+
+
+
+    1 - index.php          - 10
+    2 - index.php?limit=10 - 20
+    3 - index.php?limit=20 - 30
